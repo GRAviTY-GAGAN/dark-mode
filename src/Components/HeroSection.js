@@ -3,10 +3,10 @@ import ThemeContext from "../Context/Context";
 import AppTheme from "../Color";
 
 const Herosection = () => {
-    const theme = useContext(ThemeContext)[0];
-    const currentTheme = AppTheme[theme];
+    // const theme = useContext(ThemeContext)[0];
     const [themeMode, setThemeMode] = useContext(ThemeContext);
-    console.log(ThemeContext);
+    const currentTheme = AppTheme[themeMode];
+    console.log(themeMode);
 
     return (
         <div style={{
